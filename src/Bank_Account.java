@@ -4,6 +4,7 @@ public class Bank_Account {
 	private String account_name;
 	private double account_balance;
 	
+	
 	public void deposite(double amt) {
 		if(amt > 0) {
 			account_balance = account_balance+amt;
@@ -26,6 +27,7 @@ public class Bank_Account {
 	public void blanceCheck() {
 		System.out.println("you current balance $"+account_balance);
 	}
+	//constructor 
 	public Bank_Account(long account_number,String account_name,double account_balance) {
 		this.account_number = account_number;
 		this.account_name = account_name;
